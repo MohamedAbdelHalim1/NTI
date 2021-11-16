@@ -1,5 +1,5 @@
 <?php 
-require 'blogDataBaseConnection.php';
+require 'task7_DB.php';
 require 'blogFunctionHelper.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
