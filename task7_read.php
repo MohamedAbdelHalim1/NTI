@@ -1,6 +1,6 @@
 <?php 
 
-require 'blogDataBaseConnection.php';
+require 'task7_DB.php';
 
 $sql = "select * from blogusers";
 
