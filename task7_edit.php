@@ -1,5 +1,5 @@
 <?php 
-require 'blogDataBaseConnection.php';
+require 'task7_DB.php';
 require 'blogFunctionHelper.php';
 
 $id = $_GET['id'];
