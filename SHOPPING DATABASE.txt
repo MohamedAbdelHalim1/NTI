@@ -1,0 +1,17 @@
+                                        SHOPPING DATABASE
+(1)  TABLES :
+        1. Users Table : Each User SignUp , User Details Inserted Into Users Table 
+                    - Columns : ID , Name , Email , Password 
+        2. Products Table : Contains All The Products Sold By Other Sellers
+                    - Columns : ID , Name , Quantity , Price , Photo , User_id , Category_id
+        3. Categories Table : Contains All Products Categories 
+                    - Columns : ID , Name 
+        4. Carts Table : Contains Each Product Got Added To Cart By A User 
+                    - Columns : ID , User_id , Product_id , Quantity 
+        5. Addresses Table : Contains List Of Addresses Added By Each User 
+                    - Columns : ID , Country , City , Street_name , Building_no , Apartment_no , User_id
+(2)  RELATIONSHIPS : 
+        1. Between Users & Products -> Many To Many RelationShip  
+        2. Between Users & Addresses -> One To Many RelationShip
+        3. Between Categories & Products -> One To Many RelationShip
+

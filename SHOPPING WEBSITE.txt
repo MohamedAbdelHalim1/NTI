@@ -1,0 +1,15 @@
+                            SHOPPING WEBSITE
+1. User Can Login OR SignUp     
+                *Login : with Email and Password.
+                *Signup : with Name , email, password, confirm password.
+2. After User Registration , User Sees HomePage Contains ALL Products in the products table in database sorted From recent. => Product name, Price, Photo.
+
+3. When User Clicks on certain product it navigates To Product Details : name, image, price , seller info , add to cart button.
+
+4. when user clicks on add to cart button it inserts this product in the carts table with user_id = this user
+
+5. The cart page contains All the products where user_id = this user 
+
+6. As a Seller I can sell products by Clicking on the plus sign on the header of the website.
+
+7. When Clicking on the plus sign , it navigates me to a form to sell a product containing : Product Name, Product price , in stock quantity , Category , Photo 
