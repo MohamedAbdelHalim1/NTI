@@ -41,9 +41,45 @@ Route::get('Register', 'reg');
 // Route::get('Details/{name}/{age}','viewDetails@details');
 
 
-Route::get('create','viewDetails@create');
-Route::post('store','viewDetails@store');
-Route::get('student','viewDetails@index');
-Route::get('edit/{id}','viewDetails@edit');
-Route::post('update','viewDetails@update');
-Route::get('delete/{id}','viewDetails@delete');
+// Route::get('create','viewDetails@create');
+// Route::post('store','viewDetails@store');
+// Route::get('student','viewDetails@index');
+// Route::get('edit/{id}','viewDetails@edit');
+// Route::post('update','viewDetails@update');
+// Route::get('delete/{id}','viewDetails@delete');
+// Route::get('login','viewDetails@login');
+// Route::post('doLogin','viewDetails@doLogin');
+// Route::get('logOut','viewDetails@logOut');
+
+
+Route::resource('myToDo', 'toDo');
+Route::get('login','toDo@login');
+ Route::post('doLogin','toDo@doLogin');
+ Route::get('logOut','toDo@logOut')->middleware('checkLogin');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Route::resource('Admins','adminControler');  //inside it 7 routes
+
+//if method post as store(),he can distinguish bet them , just write Admins
+//Admins/{id}/edit  
+//Admin -> if get open index if post open store
+//Admins/{id} ->update if put , show if get , delete if delete method
+
+
