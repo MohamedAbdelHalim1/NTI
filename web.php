@@ -43,3 +43,7 @@ Route::get('Register', 'reg');
 
 Route::get('create','viewDetails@create');
 Route::post('store','viewDetails@store');
+Route::get('student','viewDetails@index');
+Route::get('edit/{id}','viewDetails@edit');
+Route::post('update','viewDetails@update');
+Route::get('delete/{id}','viewDetails@delete');
